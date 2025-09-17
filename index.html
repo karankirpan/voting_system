@@ -9,7 +9,11 @@
     <style>
         body {
             font-family: 'Poppins', sans-serif;
-            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            background: linear-gradient(135deg, rgba(17, 203, 20, 0.9), rgba(37, 117, 252, 0.9)), 
+                        url('https://images.unsplash.com/photo-1540910419892-4a36d2c3266c?ixlib=rb-4.0.0&auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
             min-height: 100vh;
             display: flex;
             align-items: center;
@@ -24,6 +28,7 @@
         }
         .btn-custom {
             padding: 12px 25px;
+            margin: 10px;
             font-size: 1.2rem;
             border-radius: 30px;
             font-weight: 600;
@@ -37,6 +42,21 @@
             transform: translateY(-3px);
             box-shadow: 0 8px 20px rgba(0,0,0,0.2);
         }
+        .features-section {
+            margin-top: 80px;
+            padding: 20px;
+        }
+        .feature-box {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 25px;
+            margin: 20px 0;
+            backdrop-filter: blur(10px);
+        }
+        .feature-icon {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
     </style>
 </head>
 <body>
@@ -45,8 +65,34 @@
         <h1>🗳 Secure & Easy <span style="color:yellow;">Voting</span></h1>
         <p class="lead">Your trusted platform for safe, transparent online elections.</p>
         <div class="mt-4">
-            <a href="signin.html" class="btn btn-primary btn-custom me-2">Sign In</a>
+            <a href="signin.html" class="btn btn-outline-light btn-custom">Sign In</a>
             <a href="login.html" class="btn btn-outline-light btn-custom">Log In</a>
+        </div>
+
+        <div class="container features-section">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="feature-box">
+                        <div class="feature-icon">🔒</div>
+                        <h2>Secure Voting</h2>
+                        <p>State-of-the-art encryption and blockchain technology ensure your vote remains secure and tamper-proof.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-box">
+                        <div class="feature-icon">⚡</div>
+                        <h2>Easy to Use</h2>
+                        <p>Vote from anywhere, anytime. Our intuitive interface makes online voting simple and accessible for everyone.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-box">
+                        <div class="feature-icon">📊</div>
+                        <h2>Real-time Results</h2>
+                        <p>Watch the election unfold with live result tracking and transparent counting system  With our App.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
