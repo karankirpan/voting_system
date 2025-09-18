@@ -8,8 +8,8 @@ import com.sun.mail.util.MailSSLSocketFactory; // New import
 public class EmailService {
 
     public static void sendOtpEmail(String recipientEmail, String otp) {
-        final String senderEmail = "kunalviveksoyane@gmail.com";
-        final String senderPassword = "nabc vwiw clwj lvvi";
+        final String senderEmail = "@gmail.com";
+        final String senderPassword = "app password";
 
         Properties props = new Properties();
         props.put("mail.smtp.auth", "true");
@@ -49,4 +49,5 @@ public class EmailService {
             throw new RuntimeException(e);
         }
     }
+
 }
